@@ -12,7 +12,7 @@ import (
 type AccessContract interface {
 	Init(shim.ChaincodeStubInterface) sc.Response
 	Invoke(shim.ChaincodeStubInterface) sc.Response
-	Synchro() sc.Response
+	//Synchro() sc.Response
 
     Auth(string) (m.ABACRequest,error)
 	CheckAccess(shim.ChaincodeStubInterface, []string) sc.Response
